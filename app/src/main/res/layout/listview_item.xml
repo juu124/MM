@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/alarm_ic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="#00ff00"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="35dp"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/hour_text"
+        android:layout_toRightOf="@+id/alarm_ic"
+        android:gravity="center"
+        android:text="00"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:id="@+id/colon"
+        android:layout_centerVertical="true"
+        android:text=":"
+        android:layout_toRightOf="@+id/hour_text"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="35sp"
+        android:id="@+id/min_text"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/colon"
+        android:gravity="center"
+        android:text="00"/>
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:id="@+id/ampm_text"
+        android:layout_toRightOf="@+id/min_text"
+        android:text="오전"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        />
+
+    <Button
+        android:id="@+id/cancel_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="삭제"/>
+
+</RelativeLayout>

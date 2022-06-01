@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--5개까지만 하는게 좋다-->
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/icon_home"
+        android:title="홈" />
+    <item
+        android:id="@+id/menu_alarm"
+        android:icon="@drawable/icon_alarm"
+        android:title="알람" />
+    <item
+        android:id="@+id/menu_tempTurb"
+        android:icon="@drawable/icon_temperature_turbidity"
+        android:title="온도/탁도" />
+</menu>
