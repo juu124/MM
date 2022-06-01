@@ -52,6 +52,7 @@ public class ListViewAdapter extends BaseAdapter
         cancel_bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Toast.makeText(context, "삭제", Toast.LENGTH_SHORT).show();
             }
         });

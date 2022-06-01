@@ -42,7 +42,6 @@ public class AlarmFragment extends Fragment {
 
     public TimePicker timePicker;
     Button set_save_bt;
-    Button cancel_bt;
     ListViewAdapter adapter;
     ListView listView;
 
@@ -162,20 +161,6 @@ public class AlarmFragment extends Fragment {
 
             }
         });
-/*        LayoutInflater inflater1 = getLayoutInflater();
-        View layout = inflater.inflate(R.layout.listview_item, rootview.findViewById(R.id.cancel_bt));
-
-            cancel_bt = layout.findViewById(R.id.cancel_bt);
-
-            cancel_bt.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Log.i("test", "test : 로그나와라");
-                    Toast.makeText(getActivity(), "삭제", Toast.LENGTH_SHORT).show();
-
-
-                }
-            });*/
         return rootview;
     }
 }
