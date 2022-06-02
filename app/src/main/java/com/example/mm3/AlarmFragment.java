@@ -128,7 +128,7 @@ public class AlarmFragment extends Fragment {
                         adapter.notifyDataSetChanged();//ㄹㅣ스트추가
 
                         String hour = String.valueOf(timePicker.getHour());
-                        String minute = String.valueOf(timePicker.getHour());
+                        String minute = String.valueOf(timePicker.getMinute());
 
                         // *저장하면서 서버 DB에도 저장*
                         alarmRequest alarmRequest = new alarmRequest(hour, minute, ampm, null);
@@ -141,7 +141,7 @@ public class AlarmFragment extends Fragment {
 
                         // 시간 가져옴
                         //int hour = timePicker.getHour();
-                       // int minute = timePicker.getMinute();
+                        //int minute = timePicker.getMinute();
                         Toast.makeText(getActivity(), "Alarm 예정 " + ampm +" "+ hour + "시 " + minute + "분" , Toast.LENGTH_SHORT).show();
 
                         Random random = new Random();
@@ -157,8 +157,6 @@ public class AlarmFragment extends Fragment {
                         break;
                     }
                 }
-
-
             }
         });
         return rootview;

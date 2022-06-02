@@ -1,6 +1,7 @@
 package com.example.mm3;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,7 +53,7 @@ public class ListViewAdapter extends BaseAdapter
         cancel_bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Log.i("test","test: 삭제 기능 만들고 싶어요ㅛㅛ....");
                 Toast.makeText(context, "삭제", Toast.LENGTH_SHORT).show();
             }
         });
